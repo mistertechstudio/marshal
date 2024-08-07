@@ -9,6 +9,7 @@ CREATE TABLE app.userlogin (
 	user_login_id uuid NOT NULL DEFAULT app.uuid_generate_v4(),
 	email varchar(100) NOT NULL,
 	user_password varchar(100) NOT NULL,
+	profile_user_name varchar(25) NULL,
 	is_verified bool NULL,
 	universal_token uuid NULL,
 	verification_uri varchar(200) NULL,
